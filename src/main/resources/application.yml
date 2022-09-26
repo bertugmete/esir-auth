@@ -2,3 +2,56 @@ server:
   servlet:
     context-path: /api/auth
   port: 8181
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mkk
+    username: postgres
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    show-sql: true
+
+jwt:
+  jws:
+    private-key:
+      MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmi71JIENu/bJ3
+      daACrzLBQJS6GAB5dUNXuRZvqUQp3edNv88MPxUMbH5iNUSBox1DL5hmtlHpg3YW
+      AZ2ruaUHsVuItgrEUv8l5x4QvWy03USkRYQ/z3fv5jgE/raPXVwwfvxdus2W4rmq
+      ZzVgCzsNorfHl2RGTkLC7afnIexm09dGmxcfRPwS+3RqsJWww8b2sGZvNMp6VWTP
+      LQepWcQoQLfOaIoqOqcc7YKFNWNApHfNkJZEm15Gv5XzNovuV+UEWCReGNQrauXT
+      iWF8ItWrcTY38L/sLBtXXzcMjbfY9TSENcrAhACBhm28SD9lTutDw9cP1tUBe5pZ
+      SeNbcOH/AgMBAAECggEAenUtTOOIMcggvW2jpdWkgCw4L00OrD/osEvLj3bqQ86C
+      EM0ENID9vRDZLOT15kxFa+1HJd7RA95BqZSulmH+UlW6dB9Gc2yDZx81ICHoGGTJ
+      3++tei3WhnLEpgeTvH5tFsuITHLaUCONWRpiSKh5V2FZuEw80uUgeau9VVnANSpG
+      tvLfB05iA1sNEXQYahvZbkxv3zuqbySJ4VS19YnDkhkvokpCnpXfzlmCs25Q3NRH
+      LUvN8G467nZt6I36KOSZHWMPRj3SCPQ4MdvM/Fot3QCT4qnRC6baGMnXttuA4hUM
+      bjgU7BiJloCoK+/CHRYMb5Lvb87EXT8Ut0guwke+oQKBgQDWV3jcUv+NwVT9RvGh
+      7+0DOa0tLnx2CPrJnnPCpIrXeNWj1y0ndJzDsS9T/NFFYHIS93osqX929WjbIOT9
+      3s5/pB9ua63S5x7t67k++xib8LCbzz6wAiKAP2DrCiTZdLkfXpyPuxAgxDU0etCj
+      Su8sfqAhj4MQM5TvnomikCo1awKBgQDG6jH8m8rPkkmUNQQcf8/srQXIi0SSWcWS
+      5JIhdJXXRA8I2s9+dSQtIuP66UlBSHGc6C1CrKkimhIXB/nHDzl8JTr1sLpk1Hzs
+      KheVce+Amlqu1ZfiMosdrXIWB8pCYtfakHD8x1+SOWftAdhD/uAhVzdOjRuq5n2I
+      P9B6MuDWvQKBgQCqiTgZHFRFxe/IAJ0Z+dn6ufYGP7k49JYMumxiDiaFn5djXz2G
+      6eocbSo5yan7Z+v7GTn0tPs8e69swXRQZOipd7ymTzgi2E6sf+OIr6F52Pu7TB4V
+      Te2DWmnTN+PvvEXaJp2sYepIF7Q5SAoeEe3P2gOwEA34YwH50Iqzc76RdwKBgF2D
+      WECjlTMEWOb+DZLAW6Wuqdtf7brHzWSDZFeqEY+EBXVqOMYAmCNIFdmttqykPBVB
+      6ZVAyrrjp8GAFGMKu0Gr1w4OKXKhmqEEINY3HBtfdWZgL+k9Tb2D/vBwdRvEkCnG
+      YffUWw/JQRxhE6TTu9aww+V/3RP5C+bz6TSpmp4ZAoGBAL8T8fuNyBU9C0Ql9dLK
+      vx0M6elOl4kbmE3QmfcS1E8bVrf1RufmcpvbjkvjtbuIjZ6VrickKFLuzYwlaWaJ
+      3B0JS2vay7X7YeZSXL1sbERo/QkYpG4hr+uV3xJBQiYL0DofM8eocE5nNNyREKYa
+      73XkuwCZdkKG92QVe/wT5d+c
+    public-key:
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApou9SSBDbv2yd3WgAq8y
+      wUCUuhgAeXVDV7kWb6lEKd3nTb/PDD8VDGx+YjVEgaMdQy+YZrZR6YN2FgGdq7ml
+      B7FbiLYKxFL/JeceEL1stN1EpEWEP8937+Y4BP62j11cMH78XbrNluK5qmc1YAs7
+      DaK3x5dkRk5Cwu2n5yHsZtPXRpsXH0T8Evt0arCVsMPG9rBmbzTKelVkzy0HqVnE
+      KEC3zmiKKjqnHO2ChTVjQKR3zZCWRJteRr+V8zaL7lflBFgkXhjUK2rl04lhfCLV
+      q3E2N/C/7CwbV183DI232PU0hDXKwIQAgYZtvEg/ZU7rQ8PXD9bVAXuaWUnjW3Dh
+      /wIDAQAB
